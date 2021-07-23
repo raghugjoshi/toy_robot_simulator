@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  reconnect: false
+  database: toyrobotsimulator_development
+  pool: 5
+  username: general
+  password: password
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  reconnect: false
+  database: toyrobotsimulator_test
+  pool: 5
+  username: general
+  password: password
+  host: localhost
+  port: 5432
