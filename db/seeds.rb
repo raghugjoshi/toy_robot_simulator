@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+		ToyRobot.create({ full_name: 'Tison', position_x: nil, position_y: nil, direction: nil})
+
+		Table.create({ width: 5, height: 5})
