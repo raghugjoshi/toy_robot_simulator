@@ -7,4 +7,8 @@ FactoryBot.define do
     width   { 5 }
     height  { 5 }
   end
+
+  factory :document do
+    name { Rack::Test::UploadedFile.new 'spec/fixtures/test_file.txt', 'text/plain' }
+  end
 end

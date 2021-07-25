@@ -26,6 +26,9 @@ gem 'turbolinks', '~> 5'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Document uploading
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -34,6 +37,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
   gem 'factory_bot', '~> 6.2'
   gem 'awesome_print'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
