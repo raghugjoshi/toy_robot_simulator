@@ -68,6 +68,11 @@ RSpec.describe ToyRobot, type: :model do
           toy_robot.direction = 50 
           expect(toy_robot).to be_invalid
         end
+
+        it 'validates direction for non-inclusion value' do
+          toy_robot.direction = 'TEST'
+          expect(toy_robot).to be_invalid
+        end
       end
     end
   end
